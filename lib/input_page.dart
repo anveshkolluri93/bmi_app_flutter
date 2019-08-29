@@ -29,12 +29,14 @@ class _InputPageState extends State<InputPage> {
                   child: ReusableCard(
                     color: activeCardColor,
                     cardChild: ReusableIconWidget(
-                        icon: FontAwesomeIcons.mars, text: 'MALE'),
+                        icon: FontAwesomeIcons.mars, label: 'MALE'),
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
                     color: activeCardColor,
+                    cardChild: ReusableIconWidget(
+                        icon: FontAwesomeIcons.venus, label: 'FEMALE'),
                   ),
                 ),
               ],

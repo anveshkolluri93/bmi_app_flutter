@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ReusableIconWidget extends StatelessWidget {
+const labelTextStyle = TextStyle(
+  color: Color(0xFF8D8E98),
+  fontSize: 18.0,
+);
 
+class ReusableIconWidget extends StatelessWidget {
   final IconData icon;
-  final String text;
-  const ReusableIconWidget({@required this.icon, @required this.text})
+  final String label;
+  const ReusableIconWidget({@required this.icon, @required this.label});
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +23,8 @@ class ReusableIconWidget extends StatelessWidget {
           height: 15.0,
         ),
         Text(
-          text,
-          style: TextStyle(
-            color: Color(0xFF8D8E98),
-          ),
+          label,
+          style: labelTextStyle,
         )
       ],
     );
