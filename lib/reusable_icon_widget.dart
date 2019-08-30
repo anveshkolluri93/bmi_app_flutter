@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
-const labelTextStyle = TextStyle(
-  color: Color(0xFF8D8E98),
-  fontSize: 18.0,
-);
+import 'contants.dart';
 
 class ReusableIconWidget extends StatelessWidget {
   final IconData icon;
@@ -24,7 +21,7 @@ class ReusableIconWidget extends StatelessWidget {
         ),
         Text(
           label,
-          style: labelTextStyle,
+          style: klabelTextStyle,
         )
       ],
     );
