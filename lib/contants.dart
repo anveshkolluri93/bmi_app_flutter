@@ -5,6 +5,12 @@ const kLabelTextStyle = TextStyle(
   fontSize: 18.0,
 );
 
+const kLargeTextStyle = TextStyle(
+  color: Colors.white,
+  fontSize: 25.0,
+  fontWeight: FontWeight.bold,
+);
+
 const kNumberTextStyle = TextStyle(fontSize: 50.0, fontWeight: FontWeight.w800);
 
 const kBottomContainerHeight = 80.0;
